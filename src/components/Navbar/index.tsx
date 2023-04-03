@@ -63,8 +63,12 @@ export const NavBar = (): JSX.Element => {
 };
 
 export const NavLinks = (): JSX.Element => {
+  const aboutMeModal =() =>{
+  
+  }
   return (
     <NavbarLinks>
+      <Button type="primary" as="a" href="#aboutMe">About me</Button>
       {userData.whatsappNumber && (
         <Button
           type="primary"
@@ -72,7 +76,7 @@ export const NavLinks = (): JSX.Element => {
           target="_blank"
           href={`https://api.whatsapp.com/send?phone=+55${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
         >
-          Falar no whatsapp
+          Contact me on whatsapp
         </Button>
       )}
 
